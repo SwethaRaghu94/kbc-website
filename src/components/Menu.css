@@ -1,0 +1,43 @@
+.menu-page {
+    display: flex;
+  
+  }
+  
+ 
+  .menu-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .menu-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .menu-container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px; /* Add some spacing if needed */
+  }
+  
+  .sidebar {
+    flex: 1; /* Adjust the width as needed */
+  }
+  
+  .menu-content {
+    flex: 3; /* Adjust the width as needed */
+    padding-left: 20px; /* Add some padding if necessary */
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+  }
+  
