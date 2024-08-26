@@ -16,7 +16,7 @@ function App() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleStartOrder = () => {
-    setModalOpen(false);
+    setModalOpen(true);
   };
 
   const closeModal = () => {
