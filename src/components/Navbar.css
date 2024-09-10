@@ -1,5 +1,18 @@
+
+
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navbar {
     border-bottom: 1px solid #e0e0e0;
+    
   }
   
   .navbar__top {
@@ -8,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #e0e0e0;
+ 
   }
   
   .navbar__location {

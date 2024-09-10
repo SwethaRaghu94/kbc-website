@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import SearchBar from './SearchBar';
 import ProductCard from './ProductCard';
@@ -13,9 +13,15 @@ const menuItems = [
 ];
 
 function Menu() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true); // Open modal when Start Order is clicked
+  };
   return (
     <div className="menu-page">
-      <HeroSection />  {/* Keep HeroSection at the top */}
+      
+      <HeroSection onButtonClick={openModal} />
       <div className="menu-container">  {/* Add a container for sidebar and content */}
         <Sidebar />
         <div className="menu-content">
@@ -27,6 +33,12 @@ function Menu() {
           </div>
         </div>
       </div>
+      {isModalOpen && (
+        <div className="modal">
+          {/* Your modal content */}
+          <button onClick={() => setModalOpen(false)}>Close Modal</button>
+        </div>
+      )}
     </div>
   );
 }

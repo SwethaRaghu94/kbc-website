@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import HeroSection from './HeroSection';
 import './Deals.css';
-import dealBanner from '../assets/images/deals-banner.png';
+// import dealBanner from '../assets/images/deals-banner.png';
 import deal1 from '../assets/images/deal1.png';
 import deal2 from '../assets/images/deal2.png';
 
@@ -27,11 +28,7 @@ function Deals() {
   return (
     <div className="deals-page">
       {/* <div className="deals-hero"> */}
-      <div className="deals-hero" style={{ backgroundImage: `url(${dealBanner})` }}>
-        {/* <img src={dealBanner} alt="Deals Banner" />         */}
-        <h1>OFFERS</h1>
-        <button className="hero-button" onClick={openModal}>Start Order</button>
-      </div>
+      <HeroSection />
       <div className="deals-content">
         <h2>NATIONAL OFFERS</h2>
         <div className="deals-links">
