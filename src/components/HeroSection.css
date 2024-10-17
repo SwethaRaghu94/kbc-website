@@ -1,35 +1,37 @@
 .hero {
-    background-image: url('../assets/images/hero-image.jpg');
-    height: 40vh;
+    /* height: auto; */
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     color: white;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
+    background-color: black;
+    /* background-position: center;
+    background-size: cover; */
     position: relative;
     overflow: hidden;
-    width: 100%;
+    /* padding: 20px; */
 
 
   }
   
   .hero__content {
-    background-color: #202124;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    text-align: center;
+    /* z-index: 1; */
     align-items: center;
-    font-size: x-small;
     width: 100%;
-    /* height: 20; */
-    position: absolute;
+    /* height: auto; */
+    /* position: absolute; */
     top: 0;
+    left: 0;
+    /* padding: 20px; */
     font-size: xx-small;
     color: white;
-    
-    
+    /* padding: 20px; */
+  
   }
   
   .hero__button {
@@ -38,12 +40,35 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: small;
+    margin: 10px;
 
   }
   
   .hero__button:hover {
     background-color: #a50000;
   }
+  .image-section {
+    text-align: center;
+    /* margin: 65px; */
+    width: 100%;
+   
+  }
   
+  .image-section_image {
+    width: 100%;
+    display: block;
+    height: auto;
+    
+  }
+  
+  /* BrowseCategories.css */
+  .browse-categories-section {
+    padding: 40px;
+  }
+  
+  .categories-container {
+    display: flex;
+    gap: 20px;
+  }

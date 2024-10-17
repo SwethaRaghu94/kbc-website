@@ -1,8 +1,15 @@
 .deals-page {
     text-align: center;
   }
+
+  * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
   
-  .deals-hero {
+  /* .deals-hero {
     position: relative;
     background: url('../assets/images/deals-banner.png') no-repeat center center/cover;
     height: 300px;
@@ -20,9 +27,9 @@
   .deals-hero h1 {
     position: absolute;
     font-size: 3rem;
-  }
+  } */
   
-  .hero-button {
+  /* .hero-button {
     position: absolute;
     bottom: 20px;
     background-color: #d0021b;
@@ -32,7 +39,7 @@
     cursor: pointer;
     border-radius: 5px;
     font-size: 1.2rem;
-  }
+  } */
   
   .deals-content {
     padding: 20px;
@@ -177,3 +184,29 @@
     text-decoration: none;
   }
   
+   /* .hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:none; 
+    color: white;
+    padding: 30px;
+  }
+  
+  .hero__content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px !important; 
+    
+    text-align: center;
+  }
+  
+  .hero__button {
+    background-color: #d0021b;
+    color: white;
+    border: none;
+    padding: 10px 20px !important;;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10px;
+  } */

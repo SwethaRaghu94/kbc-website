@@ -1,23 +1,28 @@
 import React from 'react';
+import './Menu.css';
 import './HeroSection.css';
-import heroImage from '../assets/images/hero-image.jpg';
 
+function HeroSection({ openModal, showImage, imageSrc}) {
 
-function HeroSection({ backgroundImage, openModal }) {
-  const heroStyle = {
-    backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
-    backgroundSize: backgroundImage ? 'cover' : 'none',
-    backgroundPosition: backgroundImage ? 'center' : 'none',
-    backgroundColor: backgroundImage ? 'transparent' : '#333', // Fallback background color if no image
-  };
   return (
-    <div className="hero" style={heroStyle}>
+    <div className="hero">
       <div className="hero__content">
         <h1>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</h1>
         <button className="hero__button" onClick={openModal}>Start Order</button>
       </div>
+      {/* Conditionally render the image section */}
+      {showImage && (
+        <div className="image-section">
+          <img
+            src={imageSrc}  // Replace with appropriate image
+            alt="Hero"
+            className="image-section_image"
+          />
+        </div>
+      )}
     </div>
   );
 }
 
 export default HeroSection;
+   

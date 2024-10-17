@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
 import logo from '../assets/images/logo.png';
 import cartIcon from '../assets/images/cart-icon.png';
+import './Navbar.css';
 
 function Navbar({ onStartOrder }) {
   return (
